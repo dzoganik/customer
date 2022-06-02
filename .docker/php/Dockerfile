@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y zlib1g-dev g++ git libicu-dev zip libzi
 WORKDIR /var/www/customer
 
 COPY --from=composer:latest /usr/bin/composer /usr/local/bin/composer
-#COPY /var/www/election ./
+#COPY /var/www/customer ./
 
 #RUN composer update
 
