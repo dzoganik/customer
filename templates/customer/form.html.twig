@@ -1,1 +1,18 @@
-{{ form(form) }}
+{{ form_start(form, { 'attr' : { 'class': 'row mb-2' } }) }}
+    <div class="col-auto">
+        {{ form_label(form.firstName) }}
+        {{ form_widget(form.firstName) }}
+    </div>
+    <div class="col-auto">
+        {{ form_label(form.lastName) }}
+        {{ form_widget(form.lastName) }}
+    </div>
+    <div class="col-auto">
+        {{ form_label(form.phoneNumber) }}
+        {{ form_widget(form.phoneNumber) }}
+    </div>
+    <div class="col-auto">
+        <p class="form-label">&nbsp;</p>
+        {{ form_widget(form.add, { 'attr' : { 'class': 'btn-primary btn d-block' } }) }}
+    </div>
+{{ form_end(form) }}

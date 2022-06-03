@@ -7,6 +7,7 @@ namespace App\Form\Type;
 use App\Entity\Customer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TelType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -31,8 +32,8 @@ class CustomerType extends AbstractType
             ->add('lastName', TextType::class, [
                 'label' => 'last_name'
             ])
-            ->add('phoneNumber', TextType::class, [
-                'label' => 'phone_number'
+            ->add('phoneNumber', TelType::class, [
+                'label' => 'phone_number',
             ])
             ->add('add', SubmitType::class, [
                 'label' => 'add'
