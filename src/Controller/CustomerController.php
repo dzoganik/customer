@@ -14,6 +14,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CustomerController extends AbstractController
 {
+    /**
+     * @param Request $request
+     * @param CustomerRepository $customerRepository
+     * @return Response
+     */
     #[Route('/', name: 'app_customer')]
     public function index(
         Request $request,
