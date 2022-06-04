@@ -15,5 +15,5 @@ This is a sample application using PHP and Symfony.
 ## Launch
 - Clone the repo.
 - Run "docker-compose up -d" from the project directory.
-- RUN composer install.
+- Run composer install.
 - Go to http://localhost:8080/.
