@@ -26,13 +26,11 @@ class CustomerController extends AbstractController
     ): Response {
         $customer = new Customer();
         $form = $this->createForm(CustomerType::class, $customer);
-
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()) {
             $customer = $form->getData();
             $customerRepository->add($customer, true);
-
-            return $this->redirectToRoute('app_customer');
         }
 
         return $this->renderForm('customer/list.html.twig', [
