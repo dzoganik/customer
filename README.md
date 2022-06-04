@@ -8,6 +8,7 @@ This is a sample application using PHP and Symfony.
 - Nginx
 - Docker
 - Adminer
+- Bootstrap 5
 
 ## Features
 - Adding and view list of customers.
